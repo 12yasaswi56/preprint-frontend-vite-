@@ -1,0 +1,269 @@
+/* Base styles
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    padding: 15px;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .search-container {
+    padding-top: 15px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  .search-form {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  .search-button {
+    padding: 12px 20px;
+    background-color: #005bb5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #004494;
+  }
+  
+  .main-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .preprints {
+    margin-top: 30px;
+  }
+  
+  .preprint-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .preprint-item,
+  .search-result {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .search-result {
+    background-color: #e0f7fa;
+  }
+  
+  .preprint-item:hover,
+  .search-result:hover {
+    transform: scale(1.02);
+  }
+  
+  .title-link {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .author {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .abstract {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #0073e6;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #005bb5;
+  }
+  
+  /* Responsive */
+  /* @media (maxWidth: 768px) {
+    .search-form {
+      flex-direction: column;
+    }
+  
+    .search-button {
+      width: 100%;
+    }
+  }
+   */ 
+
+/* General page styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  /* Container taking full screen width */
+  .main-container {
+    width: 100%;
+    padding: 20px 40px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Page title */
+  .page-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Search bar container */
+  .search-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    color: white;
+  }
+  
+  /* Search form inside the container */
+  .search-form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Search input */
+  .search-form input {
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white; /* ✅ white background */
+    color: black; /* ✅ black text */
+    margin-bottom: 10px;
+  }
+  
+  /* Search button */
+  .search-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .search-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Preprints grid */
+  .preprint-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Individual preprint card */
+  .preprint-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+  }
+  
+  .preprint-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  /* Preprint title */
+  .preprint-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  /* Author and abstract */
+  .preprint-meta {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .preprint-abstract {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #444;
+  }
+  
+  /* Responsive breakpoints */
+  @media (max-width: 1024px) {
+    .preprint-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .preprint-list {
+      grid-template-columns: 1fr;
+    }
+  
+    .main-container {
+      padding: 20px;
+    }
+  }
+  

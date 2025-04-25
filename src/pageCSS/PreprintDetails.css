@@ -1,0 +1,141 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Container and Layout */
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    background-color: white;
+  }
+  
+  /* Text and Title Styles */
+  .title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  
+  .author {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .abstract {
+    font-size: 15px;
+    color: #444;
+    background-color: #f8f9fa;
+    padding: 12px;
+    border-radius: 6px;
+    line-height: 1.5;
+  }
+  
+  .doi {
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .doiLink {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .errorText {
+    color: red;
+  }
+  
+  .referencesContainer {
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    padding: 12px;
+    border-radius: 6px;
+  }
+  
+  .referenceList {
+    padding-left: 20px;
+  }
+  
+  .referenceItem {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .referenceLink {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .noReferences {
+    color: #777;
+  }
+  
+  .downloadButton {
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  /* Error and Loading Text */
+  .loading {
+    text-align: center;
+    font-size: 18px;
+    color: #007bff;
+  }
+  
+  .error {
+    text-align: center;
+    font-size: 18px;
+    color: red;
+  }
+  
+  /* Responsive Styles for Mobile */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .title {
+      font-size: 22px;
+    }
+  
+    .author {
+      font-size: 14px;
+    }
+  
+    .abstract {
+      font-size: 14px;
+    }
+  
+    .doi,
+    .downloadButton {
+      font-size: 14px;
+    }
+  
+    .referenceItem {
+      font-size: 12px;
+    }
+  
+    .loading,
+    .error {
+      font-size: 16px;
+    }
+  }
+  

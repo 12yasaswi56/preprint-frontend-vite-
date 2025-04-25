@@ -1,0 +1,147 @@
+/* .tools-page-container {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-image: url('/WhatsApp Image 2025-03-06 at 13.36.54_36a50011.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .tools-overlay {
+    background-color: rgba(255, 255, 255, 0.85);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+  } */
+
+  .tools-page-container {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-image: url('/resify1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    height: 100vh; /* 🔁 Ensures it occupies full screen height */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .tools-overlay {
+    background-color: rgba(255, 255, 255, 0.85);
+    width: 100%;
+    height: 100%;
+    padding: 0; /* 🔁 Removed extra padding */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 🔁 Center vertically */
+    align-items: center;
+  }
+  
+  
+  .tools-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+  }
+  
+  .tools-main-content {
+    text-align: center;
+    padding: 50px 20px;
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  .tools-heading {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #0073e6;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .tools-card {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .tools-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tools-sub-text {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #2c3e50;
+  }
+  
+  .tools-resify {
+    color: #ff5733;
+    font-weight: 700;
+    font-size: 28px;
+  }
+  
+  .tools-description {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.8;
+    font-weight: 400;
+  }
+  
+  /* ✅ Responsive styles for mobile */
+  @media screen and (max-width: 768px) {
+    .tools-main-content {
+      padding: 30px 10px;
+    }
+  
+    .tools-heading {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+  
+    .tools-sub-text {
+      font-size: 20px;
+    }
+  
+    .tools-resify {
+      font-size: 22px;
+    }
+  
+    .tools-description {
+      font-size: 16px;
+    }
+  
+    .tools-card {
+      padding: 25px;
+      border-radius: 12px;
+    }
+  }
+  

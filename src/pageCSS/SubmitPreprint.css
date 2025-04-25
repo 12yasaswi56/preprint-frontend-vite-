@@ -1,0 +1,131 @@
+/* Base Styles (Mobile First) */
+.container {
+    max-width: 100%;
+    padding: 25px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .tagline {
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    color: #bbb;
+  }
+/*   
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .navLink {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #444;
+    width: 100%;
+    text-align: center;
+  }
+   */
+  .formSection {
+    background-color: #f8f8f8;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 20px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .input,
+  .textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  .textarea {
+    resize: vertical;
+  }
+  
+  .fileInput {
+    border: none;
+  }
+  
+  .submitButton {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  /* Responsive - for tablets and up */
+  @media (min-width: 768px) {
+    .nav {
+      flex-direction: row;
+    }
+  
+    .navLink {
+      width: auto;
+    }
+  
+    .formSection {
+      padding: 24px;
+    }
+  }
+  
+  /* Responsive - for laptop and desktops */
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 100%;
+      padding: 40px;
+    }
+  
+    .formSection {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+  
+    .logo {
+      font-size: 28px;
+    }
+  
+    .heading {
+      font-size: 24px;
+    }
+  }
+  
