@@ -251,6 +251,7 @@
 
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import Navbar from "../components/navbar";
 import "../pageCSS/PreprintDetails.css";
 
 const PreprintDetails = () => {
@@ -282,6 +283,8 @@ const PreprintDetails = () => {
   if (error) return <p className="error">{error}</p>;
 
   return (
+    <div>
+     <Navbar />
     <div className="container">
       <h2 className="title">{preprint.title}</h2>
       <p className="author"><strong>By:</strong> {preprint.author}</p>
@@ -337,6 +340,7 @@ const PreprintDetails = () => {
           </Link>
         </div>
       )}
+    </div>
     </div>
   );
 };

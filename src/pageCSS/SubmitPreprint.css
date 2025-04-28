@@ -1,4 +1,4 @@
-/* Base Styles (Mobile First) */
+
 .container {
     max-width: 100%;
     padding: 25px;
@@ -23,7 +23,7 @@
     font-style: italic;
     color: #bbb;
   }
-/*   
+  
   .nav {
     display: flex;
     flex-direction: column;
@@ -42,7 +42,148 @@
     width: 100%;
     text-align: center;
   }
-   */
+  .container {
+    max-width: 100vw;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .tagline {
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    color: #bbb;
+  }
+  
+  /* Navigation */
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .navLink {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #444;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Form Section */
+  .formSection {
+    background-color: #f8f8f8;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px; /* NEW: limit form width */
+    margin: 20px auto; /* center it */
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 20px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .input,
+  .textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    color: blue;
+  }
+  
+  .textarea {
+    resize: vertical;
+  }
+  
+  .fileInput {
+    border: none;
+  }
+  
+  .submitButton {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submitButton:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive for Tablets */
+  @media (min-width: 768px) {
+    .nav {
+      flex-direction: row;
+    }
+  
+    .navLink {
+      width: auto;
+    }
+  
+    .formSection {
+      padding: 24px;
+      max-width: 600px; /* Slightly wider on tablet */
+    }
+  }
+  
+  /* Responsive for Desktops */
+  @media (min-width: 1024px) {
+    .container {
+      padding: 40px;
+    }
+  
+    .formSection {
+      padding: 30px;
+      max-width: 700px; /* Wider on big screens */
+    }
+  
+    .logo {
+      font-size: 32px;
+    }
+  
+    .heading {
+      font-size: 26px;
+    }
+  }
+  
   .formSection {
     background-color: #f8f8f8;
     padding: 16px;
@@ -72,6 +213,7 @@
     border-radius: 5px;
     border: 1px solid #ccc;
     width: 100%;
+    color:blue;
   }
   
   .textarea {

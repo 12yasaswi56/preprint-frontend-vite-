@@ -201,8 +201,9 @@ export default function SubmitPreprint() {
   };
 
   return (
-    <div className="container">
-      <Navbar />
+    <div> <Navbar />
+    
+      {/* <Navbar /> */}
       <main className="container">
         <section className="formSection">
           <h2 className="heading">Submit a New Preprint</h2>

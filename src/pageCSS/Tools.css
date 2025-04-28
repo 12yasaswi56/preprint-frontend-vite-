@@ -1,42 +1,16 @@
-/* .tools-page-container {
-    font-family: 'Poppins', Arial, sans-serif;
-    background-image: url('/WhatsApp Image 2025-03-06 at 13.36.54_36a50011.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    min-height: 100vh;
-    padding-top: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    z-index: 0;
-  }
-  
-  .tools-overlay {
-    background-color: rgba(255, 255, 255, 0.85);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 0;
-  } */
-
-  .tools-page-container {
+.tools-page-container {
     font-family: 'Poppins', Arial, sans-serif;
     background-image: url('/resify1.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     min-height: 100vh;
-    height: 100vh; /* 🔁 Ensures it occupies full screen height */
+    width: 100vw;
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
     position: relative;
     z-index: 0;
   }
@@ -44,49 +18,35 @@
   .tools-overlay {
     background-color: rgba(255, 255, 255, 0.85);
     width: 100%;
-    height: 100%;
-    padding: 0; /* 🔁 Removed extra padding */
-    margin: 0;
+    height: 100vh; /* 🛠 Full viewport height */
     display: flex;
-    flex-direction: column;
-    justify-content: center; /* 🔁 Center vertically */
-    align-items: center;
+    align-items: center;  /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    padding: 0;
+    margin: 0;
   }
   
-  
   .tools-content-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
-    flex: 1;
+    max-width: 1000px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .tools-main-content {
     text-align: center;
-    padding: 50px 20px;
-    width: 100%;
-    max-width: 1000px;
-  }
-  
-  .tools-heading {
-    font-size: 42px;
-    font-weight: 700;
-    margin-bottom: 40px;
-    color: #0073e6;
-    letter-spacing: 1px;
-    text-transform: uppercase;
   }
   
   .tools-card {
     background-color: #ffffff;
-    padding: 40px;
-    border-radius: 16px;
+    padding: 2.5rem;
+    border-radius: 1rem;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-    display: inline-block;
     text-align: center;
+    width: 90%;
     max-width: 600px;
-    width: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
@@ -95,53 +55,65 @@
     box-shadow: 0 16px 36px rgba(0, 0, 0, 0.2);
   }
   
+  /* Typography inside card */
+  .tools-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #0073e6;
+    text-transform: uppercase;
+  }
+  
   .tools-sub-text {
-    font-size: 26px;
+    font-size: 1.75rem;
     font-weight: 600;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
     color: #2c3e50;
   }
   
   .tools-resify {
     color: #ff5733;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 1.8rem;
   }
   
   .tools-description {
-    font-size: 18px;
+    font-size: 1.1rem;
     color: #555;
-    margin-top: 10px;
+    margin-top: 0.75rem;
     line-height: 1.8;
-    font-weight: 400;
   }
   
-  /* ✅ Responsive styles for mobile */
+  /* Responsive */
   @media screen and (max-width: 768px) {
-    .tools-main-content {
-      padding: 30px 10px;
-    }
-  
     .tools-heading {
-      font-size: 28px;
-      margin-bottom: 20px;
+      font-size: 2rem;
     }
   
     .tools-sub-text {
-      font-size: 20px;
+      font-size: 1.5rem;
     }
   
     .tools-resify {
-      font-size: 22px;
+      font-size: 1.6rem;
     }
   
     .tools-description {
-      font-size: 16px;
+      font-size: 1rem;
     }
   
     .tools-card {
-      padding: 25px;
-      border-radius: 12px;
+      padding: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .tools-heading {
+      font-size: 1.75rem;
+    }
+  
+    .tools-card {
+      padding: 1.5rem;
     }
   }
   
