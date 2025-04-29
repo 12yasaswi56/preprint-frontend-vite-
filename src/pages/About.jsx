@@ -290,7 +290,7 @@ const About = () => {
             className="imageContainer"
           >
             <img
-              src="/about.jpg"
+              src="/enertransition/about.jpg"
               alt="Learning Illustration"
               className="aboutImage"
             />

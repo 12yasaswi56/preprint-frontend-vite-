@@ -258,7 +258,7 @@ const Navbar = () => {
   return (
     <nav className="nav-container">
       <div className="logo-section">
-        <img src="/ThynkCafe.png" alt="Logo" className="logo-image" />
+        <img src="/enertransition/ThynkCafe.png" alt="Logo" className="logo-image" />
         <div className="logo-container">
           <h1 className="logo">
             <span className="ener">Ener</span>

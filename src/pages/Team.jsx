@@ -33,32 +33,32 @@ const teamMembers = [
   {
     name: "Yasaswi Kopparapu",
     role: "Team Lead, Backend Developer",
-    image: "/yasaswi.jpg"
+    image: "/enertransition/yasaswi.jpg"
   },
   {
     name: "Alan Munigety",
     role: "Backend Developer",
-    image: "/alan.jpg"
+    image: "/enertransition/alan.jpg"
   },
   {
     name: "Harshal Kumar",
     role: "Frontend Developer",
-    image: "/harshal.jpg"
+    image: "/enertransition/harshal.jpg"
   },
   {
     name: "Dhanashree Patil",
     role: "Frontend Developer",
-    image: "/dhana.jpg"
+    image: "/enertransition/dhana.jpg"
   },
   {
     name: "Mr Harshit Mittal",
     role: "Co-founder & Chief Executive Officer",
-    image: "/harshit.jpg"
+    image: "/enertransition/harshit.jpg"
   },
   {
     name: "Mr Vivek Yadav",
     role: "Co-founder & Chief of Management and Industrial Relations",
-    image: "/vivek.jpg"
+    image: "/enertransition/vivek.jpg"
   }
 ];
 

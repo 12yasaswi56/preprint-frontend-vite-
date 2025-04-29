@@ -89,9 +89,9 @@ const MainContent = () => (
 );
 
 const images = [
-  '/physics-science-seamless-pattern-background-vector-10003644.jpg',  // Replace with your actual file path
-  '/science-seamless-pattern-background-with-outline-icons-in-blue-color-for-scientific-research-concept-i.jpg',  // Second generated image
-  '/0ab53e4495f85b4806afdeb17e3e1d49.jpg', // Keep one placeholder for now or replace
+  '/enertransition/physics-science-seamless-pattern-background-vector-10003644.jpg',  // Replace with your actual file path
+  '/enertransition/science-seamless-pattern-background-with-outline-icons-in-blue-color-for-scientific-research-concept-i.jpg',  // Second generated image
+  '/enertransition/0ab53e4495f85b4806afdeb17e3e1d49.jpg', // Keep one placeholder for now or replace
 ];
 
 const HeaderSection = () => {
